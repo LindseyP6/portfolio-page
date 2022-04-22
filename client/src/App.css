@@ -44,8 +44,12 @@
 
 .bio h1 {
   font-weight: bold;
-  padding: 10px;
-  margin: 10px;
+}
+
+.bio p {
+  font-size: 17px;
+  max-width: 250px;
+  padding: 6px;
 }
 
 .bio {
@@ -60,7 +64,7 @@
   border-right: 4px dashed #5AAA95;
 }
 
-.headerLinks {
+.navLinks {
   /* color: #5AAA95; */
   font-family: 'Anton', sans-serif;
   font-size: 35px;
@@ -68,7 +72,7 @@
   padding-top: 8px;
 }
 
-.headerLinks p {
+.navLinks p {
   padding: 20px;
   display: inline;
 }

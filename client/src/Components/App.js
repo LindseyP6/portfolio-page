@@ -1,7 +1,6 @@
 import React, {useEffect, useState, useCallback} from 'react';
 import '../App.css';
-import HeaderLinks from './HeaderLinks'
-import Bio from './Bio'
+import TopBar from './TopBar'
 import Projects from './Projects'
 
 function App() {
@@ -26,10 +25,7 @@ useEffect(() => {
         <p>{greeting} </p> 
         <h1>I'm Lindsey Lee</h1>
       </div>
-      <div className="topBar">
-        <Bio />
-        <HeaderLinks />
-      </div>
+      <TopBar />
       <div className="project">
         {/* <Projects /> */}
       </div>

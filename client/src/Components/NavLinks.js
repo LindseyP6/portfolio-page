@@ -1,8 +1,8 @@
 import React from 'react'
 
-function HeaderLinks() {
+function NavLinks() {
   return (
-    <div className="headerLinks">
+    <div className="navLinks">
       <p>Bio</p>
       <p>Projects</p>
       <p>Cat Rescue</p>
@@ -10,4 +10,4 @@ function HeaderLinks() {
   )
 }
 
-export default HeaderLinks
+export default NavLinks
