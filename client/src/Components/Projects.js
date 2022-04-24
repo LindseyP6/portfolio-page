@@ -11,8 +11,9 @@ function Projects() {
       
        
   return (
-    <div className="projects-main">
-        <ul>
+    <div id="projects">
+    <h1>Projects</h1>
+        {/* <ul>
         {
         projects?.map(project => {
             return (
@@ -23,7 +24,7 @@ function Projects() {
             )
         })
         }
-        </ul>
+        </ul> */}
     </div>
   )
 }

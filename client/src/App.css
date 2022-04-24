@@ -1,83 +1,86 @@
-*, body, html{
+*{
   background-color: #141716;
-  margin:0;
-  padding:0;
-  /* overflow-x:hidden; */
+  scroll-behavior: smooth;
+  color: white;
 }
 
-.App {
+
+body {
+  background-color: #141716;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: flex-start;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
-.header {
+
+.greeting {
   font-family: 'Monoton', cursive;
-  padding: 10px;
-  margin: 10px;
-  position: fixed;
-  top: 50%;
-  left: 40%;
-  height: 400px;
+  /* top: 50%;
+  right: 5%; */
+  position: sticky;
+  position: -webkit-sticky;
+  /* float: right;
+  right: 0 */
 }
 
-.header h1 {
+.greeting h1 {
   font-size: 85px;
   color: #BB9F06;
-  /* color: #5AAA95; */
 }
 
-.header p {
+.greeting p {
   font-size: 55px;
   padding-bottom: 10px;
 }
 
-.topBar {
-  position: fixed;
-  top: 5%;
-  left: 5%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+/* .#header {
+  margin: 10px;
+  position: sticky;
+  position: -webkit-sticky;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr)
+} */
 
-.bio h1 {
+/* .headerBio h1 {
   font-weight: bold;
-}
+} */
 
-.bio p {
-  font-size: 17px;
-  max-width: 250px;
-  padding: 6px;
-}
-
-.bio {
+/* .headerBio {
   color: #5AAA95;
   font-family: 'Sora', sans-serif;
   font-size: 20px;
-  max-width: 400px;
-  max-height: 600px;
-  padding-right: 30px;
-  margin: 10px;
   text-align: center;
   border-right: 4px dashed #5AAA95;
-}
+  padding: 30px;
+} */
 
-.navLinks {
-  /* color: #5AAA95; */
+/* .navLinks {
   font-family: 'Anton', sans-serif;
   font-size: 35px;
   padding-left: 50px;
   padding-top: 8px;
-}
+} */
 
-.navLinks p {
+/* .navLinks p {
   padding: 20px;
   display: inline;
-}
+} */
 
-.projects-main {
+/* #bio p {
+  font-size: 17px;
+  max-width: 250px;
+  padding: 6px;
+  color: #5AAA95;
+} */
+
+/* #projects {
   position: fixed;
   left: 0; right: 0; bottom: 0;
-}
+} */
+
+/* #cats {
+  color: yellow
+} */
+
+/* color: #5AAA95; */
