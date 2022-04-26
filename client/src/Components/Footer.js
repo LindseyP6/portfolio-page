@@ -7,9 +7,8 @@ import { AiOutlineInstagram } from "react-icons/ai";
 function Footer() {
   return (
     <div id="footer">
-        <span>
-          <h3>Thanks!</h3>
-            <AiOutlineMail /> 
+        Thanks!      <span>
+            <AiOutlineMail/> 
             <a href="https://www.linkedin.com/in/lindsey-lee-pregent-01896813a/" target="_blank"><AiOutlineLinkedin /></a>
             <a href="https://github.com/LindseyP6" target="_blank"><VscGithub /></a> 
             <a href="https://www.instagram.com/allcatsarebeautiful_bktnr/" target="_blank"><AiOutlineInstagram /></a>
