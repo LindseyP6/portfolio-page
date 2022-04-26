@@ -11,7 +11,7 @@ import Footer from './Footer';
 function App() {
 
   return (
-    <div className="app">
+    <div id="app">
       <Header />
       <Greeting />  
       {/* <Switch> */}

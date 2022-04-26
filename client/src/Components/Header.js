@@ -6,14 +6,7 @@ import { HashLink as Link } from "react-router-hash-link";
 
 function Header() {
   return (
-    <div className="header">
-        <div className="headerBio">
-            <h1>Full Stack Developer</h1>
-            <br></br>
-            <h6>React | Ruby</h6>
-            <br></br>
-            <h1>Cat Rescuer.</h1>
-        </div>
+    <div id="header">
         <Switch>
             <div className="navLinks">
               <Link smooth to="/">Home</Link>

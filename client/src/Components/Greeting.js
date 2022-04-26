@@ -16,8 +16,8 @@ function Greeting() {
       return () => clearInterval(intervalID);
   }, [shuffle])
   return (
-    <div className="greeting">
-        <p>{greeting} </p> 
+    <div id="greeting">
+        <h4>{greeting} </h4> 
         <h1>I'm Lindsey Lee</h1>
     </div>
   )
