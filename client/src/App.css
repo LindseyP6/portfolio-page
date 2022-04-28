@@ -5,63 +5,20 @@
 
 body {
   background-color: #141716;
-  overflow-x: auto;
-  white-space: nowrap;
+  /* overflow-x: auto;
+  white-space: nowrap; */
 }
 
 #app {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(6);
+  grid-template-columns: 1fr fit-content(30%);
+  grid-template-rows: repeat;
   grid-column-gap: 2%;
-  grid-row-gap: 45%;
+  grid-row-gap: 15%;
   font-family: 'Rubik', sans-serif;
 }
 
-#header {
-  grid-area: 1 / 1 / 2 / 3; 
-  display: flex;
-  /* position: sticky;
-  position: -webkit-sticky; */
-}
-
-#greeting {
-  grid-area: 2 / 1 / 3 / 3;
-  font-family: 'Monoton', cursive;
-  justify-self: end;
-  /* grid-template-rows: auto; */
-  margin-right: 5%;
-}
-
-#bio {
-  grid-area: 3 / 1 / 4 / 2;
-  display: inline-grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 0;
-  margin: 10%;
-}
-
-#projects {
-  grid-area: 4 / 1 / 5 / 3;  
-}
-
-#cats {
-  grid-area: 5 / 1 / 6 / 3;
-}
-
-#footer {
-  grid-area: 6 / 1 / 7 / 3;
-  font-size: 3vw;
-  color: #06383a;
-  display: inline;
-}
-
-.navLinks {
-  font-size: 4vw;
-  align-items: center;
-  padding-left: 5%;
-  padding-top: 3%;
-}
+/* LINKS CSS: WHOLE APP */
 
 a {
   padding: 10px;
@@ -72,43 +29,181 @@ a {
 a:hover {
   color: #f4e04d;
   font-weight: bold;
-  text-shadow: 1px 1px 0px #b1a338 
+  text-shadow: 1px 1px 0px #BB9F06;
+}
+
+/* HEADER CSS */
+#header {
+  grid-area: 1 / 1 / 2 / 3; 
+  display: flex;
+  /* position: sticky;
+  position: -webkit-sticky; */
+}
+
+.navLinks {
+  font-size: 3.4em;
+  align-items: center;
+  padding-left: 5%;
+  padding-top: 3%;
+}
+
+/* GREETING CSS */
+#greeting {
+  grid-area: 2 / 1 / 3 / 3;
+  font-family: 'Monoton', cursive;
+  justify-self: end;
+  margin-right: 3%;
 }
 
 #greeting h1 {
-  font-size: 85px;
+  font-size: 5.8em;
   color: #BB9F06;
   margin: 0;
 }
 
 #greeting h4 {
-  font-size: 55px;
+  font-size: 3.7em;
+  color: #dbe4d5;
   margin: 0;
+  /* max-width: 8%; */
 }
 
-.bioLeft {
-  grid-area: 1 / 1 / 2 / 2;
-  grid-template-rows: fit-content(10%);
-  font-size: 2vw;
+#greeting p {
+  font-family: 'Rubik', sans-serif;
+  color: #dbe4d5;
+  font-size: 1.3em;
+  display: inline-block;
+  padding-right: 4%;
   color: #095256;
 }
 
-.bioRight {
-  text-align: right;
-  grid-area: 1 / 2 / 2 / 3;
-  font-size: 2vw;
-  margin-top: 10%;
-  color: #BB9F06;
+
+/* BIO CSS */
+#bio {
+  grid-area: 3 / 1 / 4 / 2;
+  display: inline-grid;
+  grid-template-columns: 1fr;
+  margin: 12%;
+  padding-top: 2%;
 }
 
-.bioRight p {
+#bio h1 {
+  grid-area: 1 / 1 / 2 / 3;
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  padding-bottom: 2%;
+}
+
+.bioLeft {
+  grid-area: 2 / 1 / 3 / 2;;
+  display: inline-block;
+  font-size: 2.1em;
+  color: #095256;
+  overflow-wrap: break-word;
+  max-width: 80%;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.bioRight {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.bioRight img {
+  max-width: 98%;
+  max-height: 98%;
+  border-radius: 12%;
+  opacity: .80;
+}
+
+/* PROJECTS CSS */
+#projects {
+  grid-area: 4 / 1 / 5 / 3;  
+  text-align: center;
+  color: white;
+  margin: 0px 5% 0px 5%;
+}
+
+#projects h1 {
+  font-size: 3.3em;
+}
+
+#projects h2 {
+  color: #BB9F06;
+  font-size: 2.5em;
+  padding: 0;
   margin: 0;
 }
 
+.projectDisplay {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 1%;
+  grid-row-gap: 1%;
+  border: 1px dashed #bba00655;
+  padding: 2%;
+}
 
-/* .headerBio h1 {
-  font-weight: bold;
-} */
+.projectDetails {
+  grid-area: 1 / 1 / 4 / 2;
+  place-items: center;
+}
+
+.projectImage {
+  grid-area: 1 / 2 / 4 / 3;
+}
+
+.projectDetails a {
+  font-size: 2em;
+  color: #095256;
+}
+
+.projectDetails a:hover {
+  font-size: 3em;
+  color: #BB9F06;
+}
+
+.projectDetails p {
+  font-size: 1.2em;
+  max-width: 60%;
+  padding-left: 22%;
+}
+
+#projects img {
+  width: 95%;
+  height: 98%;
+}
+
+iframe {
+  /* position: absolute;  */
+  width: 100%; 
+  height: 100%;
+}
+
+/* CAT CSS: TO COME */
+#cats {
+  grid-area: 5 / 1 / 6 / 3;
+}
+
+/* FOOTER CSS */
+#footer {
+  grid-area: 6 / 1 / 7 / 3;
+  font-size: 3vw;
+  color: #06383a;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.toTop {
+  justify-self: right;
+  align-self: right;
+}
+
+/* FOR MOBILE: ADJUST FONT SIZE FOR GREETING, ADJUST PROJECTS GRID AND SIZE PROJECT IMAGE, make footer links bigger, make bio with picture on top and words on bottom */
 
 /* .headerBio {
   color: #5AAA95;

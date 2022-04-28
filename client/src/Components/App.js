@@ -1,5 +1,4 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
 import '../App.css';
 import Header from './Header';
 import Greeting from './Greeting';
@@ -14,13 +13,9 @@ function App() {
     <div id="app">
       <Header />
       <Greeting />  
-      {/* <Switch> */}
-        {/* <Route exact path='/content'> */}
-        <Bio /> 
-        {/* </Route> */}
-        <Projects />
-        <Cats />
-      {/* </Switch> */}
+      <Bio /> 
+      <Projects />
+        {/* <Cats /> */}
       <Footer />
     </div>
   );
