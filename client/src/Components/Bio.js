@@ -5,8 +5,7 @@ function Bio() {
     <div id="bio">
       <h1>About Me</h1>
         <div className="bioLeft">
-          {/* <h2>Cat Rescuer.</h2> */}
-          <p>Hi! I'm Lindsey and I am excited to be entering the wide world of coding. I'm a full stack engineer with an interested in UI and graphic design.
+          <p>Hi! I'm Lindsey and I am excited to be entering the wide world of coding. I'm a full stack engineer with an interest in UI and graphic design. I bring my passion for anti-racism, social justice and cat rescue to everything I do. 
           </p>
         </div>
         <div className="bioRight">

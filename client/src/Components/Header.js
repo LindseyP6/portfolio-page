@@ -12,7 +12,7 @@ function Header() {
               <Link smooth to="/">Home</Link>
               <Link smooth to="/#bio">Bio</Link>
               <Link smooth to='/#projects'>Projects</Link>
-              <Link smooth to='/#cats'>Cats</Link>
+              {/* <Link smooth to='/#cats'>Cats</Link> */}
             </div>
         </Switch>
     </div>

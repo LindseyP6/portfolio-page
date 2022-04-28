@@ -6,6 +6,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { BsMedium } from "react-icons/bs";
 import { AiFillMediumCircle } from "react-icons/ai";
 import { RiTwitterLine } from "react-icons/ri";
+import { BiArrowToTop } from "react-icons/bi";
 import { HashLink as Link } from "react-router-hash-link";
 
 
@@ -20,7 +21,7 @@ function Footer() {
           <a href="https://www.instagram.com/allcatsarebeautiful_bktnr/" target="_blank" rel="noreferrer"><AiOutlineInstagram /></a>
           <a href="https://medium.com/@lindsey.lee6" target="_blank" rel="noreferrer"><AiFillMediumCircle /></a>
           <a href="https://medium.com/@lindsey.lee6" target="_blank" rel="noreferrer"><RiTwitterLine /></a>
-          <Link className="toTop" smooth to="/#header">Top</Link>
+          <Link className="toTop" smooth to="/#header"><BiArrowToTop /></Link>
         </span>
     </div>
   )

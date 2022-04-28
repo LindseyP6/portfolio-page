@@ -3,7 +3,7 @@ import { VscGithub } from "react-icons/vsc";
 
 function Projects() {
     const [projects, setProjects] = useState();
-    const [toggle, setToggle] = useState(true);
+    const [toggle, setToggle] = useState({});
 
     useEffect(()=>{
         fetch("/projects")
@@ -11,7 +11,7 @@ function Projects() {
         .then(setProjects)
       }, [])
       
-    function handleToggleClick(){
+    function handleToggleClick(index){
       setToggle((toggle) => !toggle)
     }
       
