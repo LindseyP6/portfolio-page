@@ -9,9 +9,9 @@ function Header() {
     <div id="header">
         <Switch>
             <div className="navLinks">
-              <Link smooth to="/">Home</Link>
               <Link smooth to="/#bio">Bio</Link>
               <Link smooth to='/#projects'>Projects</Link>
+              <Link smooth to="/#footer">Links</Link>
               {/* <Link smooth to='/#cats'>Cats</Link> */}
             </div>
         </Switch>

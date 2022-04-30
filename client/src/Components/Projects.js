@@ -30,10 +30,7 @@ function Projects() {
                   <p><strong>Tech Stack Used: </strong> {project.technologies}</p>
                 </div>
                 <div className="projectImage">
-                  {toggle ? 
-                    (<img onClick={handleToggleClick} src= {project.image} alt="{project.name} thumbnail" />) :
-                    (<iframe onClick={handleToggleClick} src={project.demo_link} title="{project.name} demo video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen/>)
-                  }
+                  <iframe onClick={handleToggleClick} src={project.demo_link} title="{project.name} demo video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen/>
                 </div>
            </div>
             )
