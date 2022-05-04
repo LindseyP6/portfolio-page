@@ -26,9 +26,9 @@ function Header() {
         <span>
           <a href="https://www.linkedin.com/in/lindsey-lee-pregent1613/" target="_blank" rel="noreferrer"><AiOutlineLinkedin /></a>
           <a href="https://github.com/LindseyP6" target="_blank" rel="noreferrer"><VscGithub /></a> 
-          <a href="https://www.instagram.com/allcatsarebeautiful_bktnr/" target="_blank" rel="noreferrer"><AiOutlineInstagram /></a>
+          {/* <a href="https://www.instagram.com/allcatsarebeautiful_bktnr/" target="_blank" rel="noreferrer"><AiOutlineInstagram /></a> */}
           <a href="https://medium.com/@lindsey.lee6" target="_blank" rel="noreferrer"><AiFillMediumCircle /></a>
-          <a href="https://medium.com/@lindsey.lee6" target="_blank" rel="noreferrer"><RiTwitterLine /></a>
+          {/* <a href="https://medium.com/@lindsey.lee6" target="_blank" rel="noreferrer"><RiTwitterLine /></a> */}
         </span>
         </div>
     </div>
