@@ -3,7 +3,7 @@ import React, {useEffect, useState, useCallback} from 'react';
 function Greeting() {
     const [greeting, setGreeting] = useState();
   
-    const hello = ['Hola!', 'Hello!', 'Bonjour!', 'Konnichiwa!', 'Nǐ  hǎo!', 'Namaste!', 'Shalom!', 'As-salaam  alykum!']
+    const hello = ['Hola!', 'Hello!', 'Bonjour!', 'Konnichiwa!', 'Nǐ  hǎo!', 'Namaste!', 'Shalom!', 'As-salaam  alykum!', 'Guten tag!', 'Zdravo!', 'Anyeong  Haseyo!']
   
   
     const shuffle = useCallback(() => {

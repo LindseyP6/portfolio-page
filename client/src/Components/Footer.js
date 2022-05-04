@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useHistory } from 'react-router-dom';
-
+import { IoIosSend }  from "react-icons/io";
 
 function Footer() {
   const form = useRef();
@@ -22,26 +22,23 @@ function Footer() {
 
   return (
     <div id="footer">
-        <form ref={form} onSubmit={sendEmail} className="emailForm">
+      <div className="contact">
         <h1>Contact Me</h1>
-            <label>Name</label>
+        <p>Reach me at lindsey.pregent@gmail.com or send me an email below!</p>
+      </div>
+        <form ref={form} onSubmit={sendEmail} className="emailForm">
             <br></br>
-            <input type="text" name="user_name" />
+            <input type="text" name="user_name" placeholder="Name" />
             <br></br>
-            <label>Email</label>
+            <input type="email" name="user_email" placeholder="Email"/>
             <br></br>
-            <input type="email" name="user_email" />
-            <br></br>
-            <label>Message</label>
-            <br></br>
-            <textarea name="message" />
+            <textarea name="message" placeholder="Message" rows="8"/>
             <br></br>
             <button 
                 type="submit"
                 name="submit"
-                value="Send!"
-                className="submit"> 
-                <strong>Send!</strong>
+                className="submitEmail"> 
+                <span>Send <IoIosSend className="sendIcon"/></span>
             </button>
       </form>
     </div>

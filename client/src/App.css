@@ -13,7 +13,7 @@ body {
   grid-template-columns: 1fr fit-content(30%);
   grid-template-rows: repeat;
   grid-column-gap: 2%;
-  grid-row-gap: 15%;
+  grid-row-gap: 10%;
   font-family: 'Rubik', sans-serif;
 }
 
@@ -21,7 +21,7 @@ body {
 
 .navLinks a {
   color: #095256;
-  padding: 5%;
+  padding: 2%;
   text-decoration: none;
 }
 
@@ -39,27 +39,28 @@ a:hover, .myLinks a:hover {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  width: 55%;
-  background-color: #14171600;
+  width: 100%;
+  background: #14171600;
+  background: transparent;
 }
 
 .navLinks {
   background: transparent;
-  font-size: 3.4em;
+  font-size: 2.6em;
   align-items: center;
-  padding: 2% 3% 0 2%;
-  background-color: #14171600;
+  padding: 1% 3% 0 2%;
+  background: #14171600;
 }
 
 .myLinks {
   font-size: 1.6em;
-  padding: 1% 1% 1% 5%;
-  background-color: #14171600;
+  padding: 1% 1% 1% 3%;
+  background: transparent;
 }
 
 .myLinks a {
   color: #c7c19f;
-  padding: 2%;
+  padding: 1%;
 }
 
 /* GREETING CSS */
@@ -80,7 +81,7 @@ a:hover, .myLinks a:hover {
   font-size: 3.7em;
   /* color: #d6c9f5; */
   color: #c7c19f;
-  margin: 0;
+  margin: 0 0 -5% 0;
   /* max-width: 8%; */
 }
 
@@ -212,12 +213,59 @@ iframe {
 /* FOOTER CSS */
 #footer {
   grid-area: 6 / 1 / 7 / 3;
-  font-size: 3vw;
   color: #06383a;
   display: inline-block;
   text-align: center;
   padding-bottom: 3%;
   margin-top: -5%;
+}
+.contact {
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+}
+#footer h1 {
+  font-size: 4em;
+}
+
+#footer p {
+  font-size: 1.5em;
+  margin-top: -5%;
+}
+.emailForm {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.emailForm input,
+.emailForm textarea  {
+  font-size: 100%;
+  width: 100%;
+  padding: .5rem;
+  margin: 1% 0% 1% 0%;
+  background-color: white;
+  font: inherit;
+  font-size: 1.2em;
+}
+
+#footer button {
+  font: white;
+  height: auto;
+  width: auto;
+  background-color: #BB9F06;
+  font-weight: bold;
+  font: inherit;
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+.sendIcon, #footer span {
+  background-color: #BB9F06;
+}
+
+.sendIcon {
+  font-size: 1em;
 }
 
 /* FOR MOBILE: ADJUST FONT SIZE FOR GREETING, ADJUST PROJECTS GRID AND SIZE PROJECT IMAGE, make footer links bigger, make bio with picture on top and words on bottom */
@@ -226,7 +274,5 @@ iframe {
   .app, body {
     /* overflow-x: auto;
     white-space: nowrap;   */
-    position: sticky;
-    position: -webkit-sticky;
   }
 }
