@@ -19,13 +19,13 @@ body {
 
 /* LINKS CSS: WHOLE APP */
 
-a {
-  padding: 10px;
-  text-decoration: none;
+.navLinks a {
   color: #095256;
+  padding: 5%;
+  text-decoration: none;
 }
 
-a:hover {
+a:hover, .myLinks a:hover {
   color: #f4e04d;
   font-weight: bold;
   text-shadow: 1px 1px 0px #BB9F06;
@@ -35,15 +35,31 @@ a:hover {
 #header {
   grid-area: 1 / 1 / 2 / 3; 
   display: flex;
-  /* position: sticky;
-  position: -webkit-sticky; */
+  flex-direction: column;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  width: 55%;
+  background-color: #14171600;
 }
 
 .navLinks {
+  background: transparent;
   font-size: 3.4em;
   align-items: center;
-  padding-left: 5%;
-  padding-top: 3%;
+  padding: 2% 3% 0 2%;
+  background-color: #14171600;
+}
+
+.myLinks {
+  font-size: 1.6em;
+  padding: 1% 1% 1% 5%;
+  background-color: #14171600;
+}
+
+.myLinks a {
+  color: #c7c19f;
+  padding: 2%;
 }
 
 /* GREETING CSS */

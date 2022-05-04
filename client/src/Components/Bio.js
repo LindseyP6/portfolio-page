@@ -9,7 +9,7 @@ function Bio() {
           </p>
         </div>
         <div className="bioRight">
-          <img src="https://live.staticflickr.com/65535/52034969779_27a1819248_z.jpg" alt="selfie of girl with glasses and purple hair"/>
+          <img src="../Images/llp.jpeg" alt="selfie of girl with glasses and purple hair"/>
         </div>
     </div>
   )

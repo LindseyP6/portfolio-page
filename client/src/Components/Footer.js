@@ -1,28 +1,49 @@
-import React from 'react'
-import { HiOutlineMailOpen } from "react-icons/hi";
-import { AiOutlineLinkedin } from "react-icons/ai";
-import { VscGithub } from "react-icons/vsc";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { BsMedium } from "react-icons/bs";
-import { AiFillMediumCircle } from "react-icons/ai";
-import { RiTwitterLine } from "react-icons/ri";
-import { BiArrowToTop } from "react-icons/bi";
-import { HashLink as Link } from "react-router-hash-link";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { useHistory } from 'react-router-dom';
 
 
 function Footer() {
+  const form = useRef();
+  const history = useHistory();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_4nwn4nh', 'template_vnaur6g', form.current, '_5ChwLXwfEmFLcvA1')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      })
+      .then(alert("Thank you for your email!"))
+      history.push(0)
+  };
+
   return (
     <div id="footer">
-        {/* See ya soon!       */}
-        <span>
-          <a href = "mailto: lindsey.pregent@gmail.com" target="_blank" rel="noreferrer"><HiOutlineMailOpen/></a>
-          <a href="https://www.linkedin.com/in/lindsey-lee-pregent1613/" target="_blank" rel="noreferrer"><AiOutlineLinkedin /></a>
-          <a href="https://github.com/LindseyP6" target="_blank" rel="noreferrer"><VscGithub /></a> 
-          <a href="https://www.instagram.com/allcatsarebeautiful_bktnr/" target="_blank" rel="noreferrer"><AiOutlineInstagram /></a>
-          <a href="https://medium.com/@lindsey.lee6" target="_blank" rel="noreferrer"><AiFillMediumCircle /></a>
-          <a href="https://medium.com/@lindsey.lee6" target="_blank" rel="noreferrer"><RiTwitterLine /></a>
-          <Link className="toTop" smooth to="/#header"><BiArrowToTop /></Link>
-        </span>
+        <form ref={form} onSubmit={sendEmail} className="emailForm">
+        <h1>Contact Me</h1>
+            <label>Name</label>
+            <br></br>
+            <input type="text" name="user_name" />
+            <br></br>
+            <label>Email</label>
+            <br></br>
+            <input type="email" name="user_email" />
+            <br></br>
+            <label>Message</label>
+            <br></br>
+            <textarea name="message" />
+            <br></br>
+            <button 
+                type="submit"
+                name="submit"
+                value="Send!"
+                className="submit"> 
+                <strong>Send!</strong>
+            </button>
+      </form>
     </div>
   )
 }
