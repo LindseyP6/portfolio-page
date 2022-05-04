@@ -15,6 +15,7 @@ function Greeting() {
       const intervalID = setInterval(shuffle, 3000);
       return () => clearInterval(intervalID);
   }, [shuffle])
+  
   return (
     <div id="greeting">
       <h4>{greeting} </h4> 

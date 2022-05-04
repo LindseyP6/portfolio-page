@@ -6,11 +6,16 @@ import Bio from './Bio';
 import Projects from './Projects';
 import Cats from './Cats';
 import Footer from './Footer';
+import ScrollToTop from "react-scroll-to-top";  
+import { BiArrowToTop } from 'react-icons/bi'
 
 function App() {
 
   return (
     <div id="app">
+      <ScrollToTop smooth color="#9885a5"
+      // component={<BiArrowToTop />} 
+      />
       <Header />
       <Greeting />  
       <Bio /> 
@@ -22,6 +27,3 @@ function App() {
 }
 
 export default App;
-
-//こんにちは
-// 你好
