@@ -104,10 +104,10 @@ a:hover, .myLinks a:hover {
 
 #bio h1 {
   grid-area: 1 / 1 / 2 / 3;
-  text-align: center;
-  font-size: 3em;
+  text-align: right;
+  font-size: 3.3em;
   color: #9885a5;
-  padding-bottom: 2%;
+  padding: 0 9% 2% 0;
 }
 
 .bioLeft {
@@ -151,6 +151,8 @@ a:hover, .myLinks a:hover {
 #projects h1 {
   font-size: 3.3em;
   color: #9885a5;
+  text-align: right;
+  padding: 0 15% 2% 0;
 }
 
 #projects h2 {
@@ -224,8 +226,9 @@ iframe {
 .contact {
   width: 50%;
   margin: 0 auto;
-  text-align: left;
+  text-align: right;
 }
+
 #footer h1 {
   font-size: 4em;
 }
