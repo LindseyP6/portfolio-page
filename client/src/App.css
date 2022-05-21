@@ -1,10 +1,14 @@
-*{
+/* *{
   background-color: #141716;
-  scroll-behavior: smooth;
-}
+} */
 
 body {
-  background-color: #141716;
+  background-color: #000000;
+  background-image: url("https://storage.cloud.google.com/all-cats/planetbg.png");
+  background-repeat: no-repeat;
+  background-size: 100vw; 
+  height: 100vw;
+  width: 100vw;
   color: rgb(233, 231, 231);
 }
 
@@ -20,7 +24,7 @@ body {
 /* LINKS CSS: WHOLE APP */
 
 .navLinks a {
-  color: #095256;
+  color: #206e70;
   padding: 2%;
   text-decoration: none;
 }
@@ -86,10 +90,11 @@ a:hover, .myLinks a:hover {
 #greeting p {
   font-family: 'Rubik', sans-serif;
   /* color: #d6c9f5; */
-  color: #095256ec;;
+  color: #9885a5;
   font-size: 1.3em;
   display: inline-block;
   padding-right: 4%;
+  margin-top: 5%;
 }
 
 
@@ -114,7 +119,7 @@ a:hover, .myLinks a:hover {
   grid-area: 2 / 1 / 3 / 2;;
   display: inline-block;
   font-size: 2em;
-  color: #095256;
+  color: #206e70;
   /* overflow-wrap: break-word; */
   max-width: 80%;
   text-align: center;
