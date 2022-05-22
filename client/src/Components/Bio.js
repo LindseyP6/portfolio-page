@@ -12,6 +12,16 @@ function Bio() {
         <div className="bioRight">
           <img src="../Images/llp.jpeg" alt="selfie of girl with glasses and purple hair"/>
         </div>
+        <div className="bio-bottom-tech-stack">
+          <h2>Tech Stack</h2>
+          <img src="https://storage.cloud.google.com/all-cats/Tech/react.svg" alt="css-icon"/>
+          <img src="https://storage.cloud.google.com/all-cats/Tech/rubyonrails.svg" alt="css-icon"/>
+          <img src="https://storage.cloud.google.com/all-cats/Tech/html5.svg" alt="css-icon"/>
+          <img src="https://storage.cloud.google.com/all-cats/Tech/css3.svg" alt="css-icon"/>
+          <img src="https://storage.cloud.google.com/all-cats/Tech/postman.svg" alt="css-icon"/>
+          <img src="https://storage.cloud.google.com/all-cats/Tech/postgresql.svg" alt="css-icon"/>
+          <img src="https://storage.cloud.google.com/all-cats/Tech/github.svg" alt="css-icon"/>
+        </div>
     </div>
   )
 }

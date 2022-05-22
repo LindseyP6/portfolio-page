@@ -144,8 +144,24 @@ a:hover, .myLinks a:hover {
   font-family: 'Monoton', cursive;
   color: #BB9F06;
   font-size: 1em;
-
+  
 }
+
+.bio-bottom-tech-stack img {
+  background-color: #1572B6;
+  width: 6vw;
+  height: 8vh;
+  border-radius: 20%;
+}
+
+#bio h2 {
+  grid-area: 1 / 1 / 2 / 3;
+  text-align: left;
+  font-size: 2.8em;
+  color: #9885a5;
+  margin-top: 7%;
+}
+
 /* PROJECTS CSS */
 #projects {
   grid-area: 4 / 1 / 5 / 3;  
@@ -166,6 +182,7 @@ a:hover, .myLinks a:hover {
   padding: 0;
   margin: 0;
 }
+
 
 .projectDisplay {
   display: grid;
