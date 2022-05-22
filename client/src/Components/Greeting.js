@@ -20,8 +20,7 @@ function Greeting() {
     <div id="greeting">
       <h4>{greeting} </h4> 
       <h1>I'm Lindsey Lee</h1>
-      <p>Brooklyn, NY based Full-Stack Software Engineer.</p>
-      <p>React.js | Ruby on Rails</p>
+      <p>Brooklyn, NY based cat rescuer launching a career as a Full-Stack Software Engineer.</p>
     </div>
   )
 }

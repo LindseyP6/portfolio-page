@@ -17,6 +17,7 @@ function Header() {
             <div className="navLinks">
               {/* <Link smooth to="/#header">Home</Link> */}
               <Link smooth to="/#bio">Bio</Link>
+              <Link smooth to='/#tech'>Tech Stack</Link>
               <Link smooth to='/#projects'>Projects</Link>
               <Link smooth to="/#footer">Contact Me</Link>
               {/* <Link smooth to='/#cats'>Cats</Link> */}

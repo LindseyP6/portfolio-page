@@ -3,6 +3,7 @@ import '../App.css';
 import Header from './Header';
 import Greeting from './Greeting';
 import Bio from './Bio';
+import TechStack from './TechStack';
 import Projects from './Projects';
 import Cats from './Cats';
 import Footer from './Footer';
@@ -19,6 +20,7 @@ function App() {
       <Header />
       <Greeting />  
       <Bio /> 
+      <TechStack /> 
       <Projects />
         {/* <Cats /> */}
       <Footer />
