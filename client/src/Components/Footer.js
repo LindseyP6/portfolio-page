@@ -26,7 +26,7 @@ function Footer() {
         <h1>Contact Me</h1>
         <p>Reach me at lindsey.pregent@gmail.com or send me an email below!</p>
       </div>
-        <form ref={form} onSubmit={sendEmail} className="emailForm">
+        <form ref={form} onSubmit={sendEmail} className="email-form">
             <br></br>
             <input type="text" name="user_name" placeholder="Name" />
             <br></br>
@@ -38,7 +38,7 @@ function Footer() {
                 type="submit"
                 name="submit"
                 className="submitEmail"> 
-                <span>Send <IoIosSend className="sendIcon"/></span>
+                <span>Send <IoIosSend className="send-icon"/></span>
             </button>
       </form>
     </div>

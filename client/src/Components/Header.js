@@ -14,23 +14,23 @@ function Header() {
   return (
     <div id="header">
         <Switch>
-            <div className="navLinks">
+            <div className="nav-links">
               {/* <Link smooth to="/#header">Home</Link> */}
               <Link smooth to="/#bio">Bio</Link>
-              <Link smooth to='/#tech'>Tech Stack</Link>
+              <Link smooth to='/#tech'>Tech-Stack</Link>
               <Link smooth to='/#projects'>Projects</Link>
               <Link smooth to="/#footer">Contact Me</Link>
               {/* <Link smooth to='/#cats'>Cats</Link> */}
             </div>
         </Switch>
-        <div className="myLinks">
-        <span>
-          <a href="https://www.linkedin.com/in/lindsey-lee-pregent1613/" target="_blank" rel="noreferrer"><AiOutlineLinkedin /></a>
+        <div className="my-links">
+        {/* <span> */}
+          <a href="https://www.linkedin.com/in/lindsey-lee-pregent1613/" target="_blank" rel="noreferrer"><AiOutlineLinkedin /></a>  
+          {/* <br></br> */}
           <a href="https://github.com/LindseyP6" target="_blank" rel="noreferrer"><VscGithub /></a> 
-          {/* <a href="https://www.instagram.com/allcatsarebeautiful_bktnr/" target="_blank" rel="noreferrer"><AiOutlineInstagram /></a> */}
+          {/* <br></br> */}
           <a href="https://medium.com/@lindsey.lee6" target="_blank" rel="noreferrer"><AiFillMediumCircle /></a>
-          {/* <a href="https://medium.com/@lindsey.lee6" target="_blank" rel="noreferrer"><RiTwitterLine /></a> */}
-        </span>
+        {/* </span> */}
         </div>
     </div>
   )

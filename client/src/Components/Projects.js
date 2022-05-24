@@ -21,15 +21,15 @@ function Projects() {
         {
         projects?.map(project => {
             return (
-              <div key={project.id} className="projectDisplay">
-                <div className="projectDetails">
+              <div key={project.id} className="project-display">
+                <div className="project-details">
                   <h2>{project.name}</h2>
                   <h3>{project.tag_line}</h3>
                   <p>{project.description}</p>
                   <a href={project.github_link} target="_blank" rel="noreferrer"><VscGithub /></a> 
                   <p><strong>Tech Stack Used: </strong> {project.technologies}</p>
                 </div>
-                <div className="projectImage">
+                <div className="project-image">
                   <iframe onClick={handleToggleClick} src={project.demo_link} title="{project.name} demo video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen/>
                 </div>
            </div>
