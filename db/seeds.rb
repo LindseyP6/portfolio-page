@@ -34,3 +34,64 @@ Project.create(
     github_link: "https://github.com/LindseyP6/tarotProject",
     technologies: "React, JSON API"
 )
+
+TechStack.create(
+    tech: "React",
+    background_color: "#61DAFB",
+    image: "https://storage.cloud.google.com/all-cats/Tech/react.svg",
+    website: "https://reactjs.org/"
+)
+TechStack.create(
+    tech: "Ruby on Rails",
+    background_color: "#CC0000",
+    image: "https://storage.cloud.google.com/all-cats/Tech/rubyonrails.svg",
+    website: "https://rubyonrails.org/"
+)
+TechStack.create(
+    tech: "HTML5",
+    background_color: "#E34F26",
+    image: "https://storage.cloud.google.com/all-cats/Tech/html5.svg",
+    website: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5"
+)
+TechStack.create(
+    tech: "JavaScript",
+    background_color: "#F7DF1E",
+    image: "https://storage.cloud.google.com/all-cats/Tech/javascript.svg",
+    website: "https://www.javascript.com/"
+)
+TechStack.create(
+    tech: "Ruby",
+    background_color: "#CC342D",
+    image: "https://storage.cloud.google.com/all-cats/Tech/ruby.svg",
+    website: "https://www.ruby-lang.org/en/"
+)
+TechStack.create(
+    tech: "CSS",
+    background_color: "#1572B6",
+    image: "https://storage.cloud.google.com/all-cats/Tech/css3.svg",
+    website: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+)
+TechStack.create(
+    tech: "Postman",
+    background_color: "#FF6C37",
+    image: "https://storage.cloud.google.com/all-cats/Tech/postman.svg",
+    website: "https://www.postman.com/"
+)
+TechStack.create(
+    tech: "PostgresSQL",
+    background_color: "#4169E1",
+    image: "https://storage.cloud.google.com/all-cats/Tech/postgresql.svg",
+    website: "https://www.postgresql.org/"
+)
+TechStack.create(
+    tech: "Github",
+    background_color: "#181717",
+    image: "https://storage.cloud.google.com/all-cats/Tech/github.svg",
+    website: "https://github.com/"
+)
+TechStack.create(
+    tech: "Mapbox",
+    background_color: "white",
+    image: "https://storage.cloud.google.com/all-cats/Tech/mapbox.svg",
+    website: "https://mapbox.com/"
+)

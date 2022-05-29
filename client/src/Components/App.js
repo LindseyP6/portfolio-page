@@ -9,6 +9,7 @@ import Cats from './Cats';
 import Footer from './Footer';
 import ScrollToTop from "react-scroll-to-top";  
 import { BiArrowToTop } from 'react-icons/bi'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
