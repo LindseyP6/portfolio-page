@@ -30,11 +30,11 @@ body {
   text-decoration: none;
 }
 
-a:hover, .my-links a:hover, link:hover {
+/* a:hover, .my-links a:hover, link:hover {
   color: #f4e04d;
   font-weight: bold;
   text-shadow: 1px 1px 0px #BB9F06;
-}
+} */
 
 /* HEADER CSS */
 #header {
