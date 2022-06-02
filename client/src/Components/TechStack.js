@@ -51,7 +51,7 @@ function TechStack() {
 
             <Col>
               <OverlayTrigger
-                placement="bottom"
+                placement="top"
                 overlay={<Popover>JavaScript</Popover>}
               >
                 <img
@@ -63,7 +63,7 @@ function TechStack() {
             </Col>
 
             <Col>
-              <OverlayTrigger placement="top" overlay={<Popover>Ruby</Popover>}>
+              <OverlayTrigger placement="bottom" overlay={<Popover>Ruby</Popover>}>
                 <img
                   src="https://storage.cloud.google.com/all-cats/Tech/ruby.svg"
                   alt="ruby-icon"
@@ -165,7 +165,7 @@ function TechStack() {
               </OverlayTrigger>
             </Col>
 
-            <Col>
+            <Col className="tech-learning">
               <OverlayTrigger
                 placement="bottom"
                 overlay={<Popover>Currently Studying: Python</Popover>}

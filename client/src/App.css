@@ -206,6 +206,14 @@ body {
   opacity: .7;
 }
 
+.tech-learning {
+  border: 1px dotted yellow;
+}
+
+.tech-learning img {
+  /* padding-top: 1%; */
+}
+
 /* PROJECTS CSS */
 #projects {
   grid-area: 5 / 1 / 6 / 3;  
