@@ -21,7 +21,6 @@ function App() {
       <Header />
       <Greeting />  
       <Bio /> 
-      <TechStack /> 
       <Projects />
         {/* <Cats /> */}
       <Footer />

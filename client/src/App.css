@@ -24,11 +24,11 @@ body {
 
 /* LINKS CSS: WHOLE APP */
 
-.nav-links a, a {
+/* .nav-links a, a, my-links a {
   color: #38a3a5;
   padding: 2.5%;
   text-decoration: none;
-}
+} */
 
 /* a:hover, .my-links a:hover, link:hover {
   color: #f4e04d;
@@ -57,6 +57,18 @@ body {
   /* align-self: center; */
   grid-area: 1 / 1 / 2 / 2;
   width: 100%;
+}
+
+.nav-links a {
+  color: #38a3a5;
+  padding: 2.5%;
+  text-decoration: none;
+}
+
+.nav-links a:hover, .my-links a:hover {
+  color: #f4e04d;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px #BB9F06;
 }
 
 .my-links {
@@ -93,7 +105,7 @@ body {
 #greeting h4 {
   font-size: 3.7em;
   /* color: #d6c9f5; */
-  color: #f4e595;
+  color: rgb(248, 248, 227);
   margin: 0;
 }
 
@@ -105,7 +117,7 @@ body {
   display: inline-block;
   padding-right: 4%;
   margin-top: 1%;
-  width: 55%;
+  width: 50%;
 }
 
 
@@ -173,54 +185,26 @@ body {
 
 #tech {
   grid-area: 4 / 1 / 5 / 3;  
-  margin: 6% 0 5% 20%;
-}
-
-.stack-grid {
-  display: flex;}
-
-#tech h1 {
-  /* grid-area: 1 / 1 / 2 / 3; */
-  text-align: left;
-  font-size: 2.6em;
-  color: #907ad6;
-  margin-top: 7%;
-}
-
-.tech img, #tech img {
-  /* background-color: #1572B6; */
-  width: 5vw;
-  height: 8.5vh;
-  border-radius: 20%;
-  opacity: .6;
 }
 
 .tech-row {
   margin: 5%;
 }
 
-#tech p {
-  width: 50%;
-  font-size: 1.4em;
-}
-
 .tech-stack-icons.container {
-  margin: 4% 0 0 5%;
-  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
 }
 
-.tech-learning {
-  width: 12vw;
-  color: white;
-  align-self: end;
-  text-align: center;
-  margin: 0 0 1.3rem 0;
+.tech img, #tech img {
+  width: 5vw;
+  height: 7.5vh;
+  border-radius: 20%;
+  opacity: .7;
 }
-
-.tech-learning img {
-  margin: 5%;
-}
-
 
 /* PROJECTS CSS */
 #projects {
@@ -318,7 +302,7 @@ iframe {
 
 #footer p {
   font-size: 1.5em;
-  margin-top: -5%;
+  margin-top: 1%;
 }
 
 .email-form {

@@ -24,13 +24,9 @@ function Header() {
             </div>
         </Switch>
         <div className="my-links">
-        {/* <span> */}
           <a href="https://www.linkedin.com/in/lindsey-lee-pregent1613/" target="_blank" rel="noreferrer"><AiOutlineLinkedin /></a>  
-          {/* <br></br> */}
           <a href="https://github.com/LindseyP6" target="_blank" rel="noreferrer"><VscGithub /></a> 
-          {/* <br></br> */}
           <a href="https://medium.com/@lindsey.lee6" target="_blank" rel="noreferrer"><AiFillMediumCircle /></a>
-        {/* </span> */}
         </div>
     </div>
   )
