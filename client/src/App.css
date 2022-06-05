@@ -159,6 +159,10 @@ body {
   align-self: end;
 }
 
+.offcanvas offcanvas-start {
+  width: 40%;
+}
+
 .bio-left p {
   background-color: #0b0c0ea6;
 }
