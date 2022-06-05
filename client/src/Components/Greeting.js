@@ -21,7 +21,7 @@ function Greeting() {
     <div id="greeting">
       <h4>{greeting} </h4> 
       <h1>I'm Lindsey Lee</h1>
-      <p>Brooklyn, NY based Full Stack Software Engineer and Cat Rescuer. Just starting out in the world of coding and looking to launch my career.</p>
+      <p>Brooklyn, NY based Full Stack Software Engineer and Cat Rescuer.</p>
       <TechStack />
     </div>
   )

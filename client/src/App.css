@@ -45,22 +45,23 @@ body {
   z-index: 1;
   display: grid;
   grid-template-columns: repeat(2);
-  grid-template-rows: 1fr;
+  grid-column-gap: 2%;
+  /* grid-template-rows: 1fr; */
 }
 
 .nav-links {
   background: transparent;
   font-size: 2.5em;
-  padding: 1% 0% 1% 10%;
+  /* padding: 1% 0% 1% 10%; */
   background-color: none;
-  text-align: center;
-  /* align-self: center; */
+  text-align: end;
+  align-self: center;
   grid-area: 1 / 1 / 2 / 2;
-  width: 100%;
+
 }
 
 .nav-links a {
-  color: #38a3a5;
+  color: #006d77;
   padding: 2.5%;
   text-decoration: none;
 }
@@ -75,10 +76,10 @@ body {
   background-color: none;
   font-size: 1.8em;
   grid-area: 1 / 2 / 2 / 3;
-  justify-self: end;
-  width: 80%;
-  align-self: right;
-  /* text-align: center; */
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  display: flex;
   padding: 0 5rem 0% 0;
 }
 
@@ -98,26 +99,25 @@ body {
 
 #greeting h1 {
   font-size: 5.3em;
-  color: #caac05;
+  color: #006d77; 
   margin: 0;
 }
 
 #greeting h4 {
   font-size: 3.7em;
-  /* color: #d6c9f5; */
-  color: rgb(248, 248, 227);
+  color: #dac4f9;
+  /* color: rgb(248, 248, 227); */
   margin: 0;
 }
 
 #greeting p {
   font-family: 'Rubik', sans-serif;
   /* color: #d6c9f5; */
-  color: #907ad6;
+  color: #caac05;
   font-size: 1.5em;
   display: inline-block;
   padding-right: 4%;
   margin-top: 1%;
-  width: 50%;
 }
 
 
@@ -142,7 +142,7 @@ body {
   text-align: center;
   align-self: stretch;
   font-size: 3.3em;
-  color: #907ad6;
+  color: #dac4f9;
   padding: 1% 9% 0% 0;
 }
 
@@ -150,7 +150,7 @@ body {
   grid-area: 2 / 1 / 4 / 2;
   display: inline-block;
   font-size: 1.5em;
-  color: #38a3a5;
+  color: #83c5be;
   /* overflow-wrap: break-word; */
   max-width: 60%;
   padding: 0;
@@ -223,7 +223,7 @@ body {
 
 #projects h1 {
   font-size: 3.3em;
-  color: #907ad6;
+  color: #dac4f9;
   text-align: right;
   padding: 8% 8% 0% 0;
 }
@@ -307,6 +307,10 @@ iframe {
 #footer h1 {
   font-size: 4em;
 }
+#footer h2 {
+  font-size: 2.6em;
+  color: #006d77;
+}
 
 #footer p {
   font-size: 1.5em;
@@ -342,12 +346,12 @@ iframe {
 
 .send-icon, #footer span {
   background-color: #dac4f9;
-  color: white;
+  color: #006d77;
 }
 
 .send-icon {
   font-size: 1em;
-  color: white;
+  color: #006d77;
 }
 
 /* .to-top-icon {

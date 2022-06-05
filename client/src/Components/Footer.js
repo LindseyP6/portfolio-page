@@ -24,15 +24,15 @@ function Footer() {
     <div id="footer">
       <div className="contact">
         <h1>Contact Me</h1>
+        <h2>Let's work together!</h2>
         <p>Reach me at lindsey.pregent@gmail.com or send me an email below!</p>
       </div>
         <form ref={form} onSubmit={sendEmail} className="email-form">
-            <br></br>
             <input type="text" name="user_name" placeholder="Name" />
             <br></br>
             <input type="email" name="user_email" placeholder="Email"/>
             <br></br>
-            <textarea name="message" placeholder="Message" rows="8"/>
+            <textarea name="message" placeholder="Drop a line" rows="7"/>
             <br></br>
             <button 
                 type="submit"
