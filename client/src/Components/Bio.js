@@ -15,7 +15,7 @@ function Bio() {
       <div className="bio-padding"></div>
       <h1>About Me</h1>
         <div className="bio-left">
-          <p>Hi! I'm Lindsey and I am excited to be entering the wide world of coding. After working in customer service and administration for 15 years, I decided on a change. I attended Flatiron School from Jan-April 2022 where I learned HMTL, CSS, JavaScript, React, Ruby and Rails. I'm now a Full Stack Software Engineer! I also work in the cat rescue world as a foster and a TNR (trap-neuter-return) certified trapper. I bring my passion for anti-racism, social justice and cat rescue to everything I do. 
+          <p>Hi! I'm Lindsey and I am excited to be entering the wide world of coding. After working in customer service and administration for 15 years, I decided on a change. I attended Flatiron School from Jan-April 2022 where I learned HMTL, CSS, JavaScript, React, Ruby and Rails. I'm now a Full Stack Software Engineer! I also work in the cat rescue world as a foster and a TNR (trap-neuter-return) certified trapper. I bring my passion for anti-racism, social justice and cat rescue to everything I do.  
           </p>
           <div className="resume-offcanvas">
             <Button variant="dark" onClick={handleShow}>
