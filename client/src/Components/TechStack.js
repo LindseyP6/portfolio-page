@@ -19,13 +19,14 @@ function TechStack() {
 
   return (
     <div id="tech">
-      {/* <h5>Tech Stack</h5> */}
       <div className="stack-grid">
+        {/* <h4> My Tech Stack </h4> */}
         <Container className="tech-stack-icons">
           <Row md="auto" className="tech-row">
             <Col>
               <OverlayTrigger
                 placement="top"
+                // padding="1px"
                 overlay={<Popover>React</Popover>}
               >
                 <img
@@ -75,7 +76,7 @@ function TechStack() {
             <Col>
               <OverlayTrigger
                 placement="top"
-                overlay={<Popover>HTML5</Popover>}
+                overlay={<Popover>HTML4</Popover>}
               >
                 <img
                   src="https://storage.cloud.google.com/all-cats/Tech/html5.svg"

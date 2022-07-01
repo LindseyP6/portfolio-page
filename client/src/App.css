@@ -113,11 +113,12 @@ body {
 #greeting p {
   font-family: 'Rubik', sans-serif;
   /* color: #d6c9f5; */
-  color: #caac05;
+  color: #dac4f9c7;
   font-size: 1.5em;
   display: inline-block;
   padding-right: 4%;
   margin-top: 1%;
+  width: 60%;
 }
 
 
@@ -147,7 +148,7 @@ body {
 }
 
 .bio-left {
-  grid-area: 2 / 1 / 4 / 2;
+  grid-area: 3 / 1 / 4 / 2;
   display: inline-block;
   font-size: 1.5em;
   color: #83c5be;
@@ -168,10 +169,10 @@ body {
 }
 
 .bio-right {
-  grid-area: 3 / 2 / 4 / 3;
+  grid-area: 3 / 2 / 4 / 3;;
   /* text-align: center; */
   align-self: start;
-
+  margin-right: 1%
 }
 
 .bio-right img {
@@ -181,18 +182,34 @@ body {
   opacity: .80;
 }
 
-#bio a {
+.bio-buttons button, .bio-buttons a {
   font-family: 'Monoton', cursive;
   color: #caac05;
-  font-size: 1em;
+  font-size: 25px;
+  padding: 1%;
+  margin: 5%;
 }
 
 #tech {
-  grid-area: 4 / 1 / 5 / 3;  
+  grid-area: 4 / 1 / 5 / 3;
+  margin-top: 8%;
+  align-items: center;
 }
 
-.tech-row {
-  margin: 5%;
+/* #tech h4 {
+  color: white;
+  justify-content: center;
+  font-size: 2em;
+} */
+
+.stack-grid {
+  /* margin: 5%; */
+  margin-left: 10%;
+}
+
+.popover {
+  padding: .7%;
+  color: #907ad6;
 }
 
 .tech-stack-icons.container {
@@ -200,22 +217,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15%;
 }
 
 .tech img, #tech img {
-  width: 5vw;
-  height: 7.5vh;
-  border-radius: 20%;
-  opacity: .7;
+  width: 4vw;
+  height: 7vh;
+  border-radius: 12%;
+  opacity: .8;
 }
 
 .tech-learning {
-  border: 1px dotted yellow;
-}
-
-.tech-learning img {
-  /* padding-top: 1%; */
+  border: 2px dotted #907ad6;
+  border-radius: 5%;
 }
 
 /* PROJECTS CSS */
