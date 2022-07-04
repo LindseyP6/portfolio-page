@@ -4,6 +4,9 @@ import Button from 'react-bootstrap/Button';
 import { Document, Page } from 'react-pdf';
 import resume from './resume.pdf';
 import TechStack from './TechStack';
+import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
 
 function Bio() {
   const [showMore, setShowMore] = useState(false);
@@ -88,18 +91,31 @@ function Bio() {
             <Button variant="dark" onClick={handleShowMore}>
               More!
             </Button>
+
               <Offcanvas show={showMore} onHide={handleCloseMore} placement='bottom'>
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title>More Sh!t About Me</Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <h4>Things I love</h4>
-                Hello Kitty. Halloween. Punk Music. Anime (One Piece, baby!).
+                <Container>
+                  <Row>
+                <span> <h4>Things I love</h4> 
+                Hello Kitty. Halloween. Punk Music. Anime.
+                </span>
+                </Row>
                 <br></br>
+                <Col>
                 <div clasName="bio-more-pics">
-                <img src="https://storage.cloud.google.com/all-cats/Tech-Stack/halloweenBio.jpg" height="150px" width="150px"/> 
                 <img src="https://storage.cloud.google.com/all-cats/Tech-Stack/hkBio.jpg" height="150px" width="150px"/> 
+                <img src="https://storage.cloud.google.com/all-cats/Tech-Stack/halloweenBio.jpg" height="150px" width="150px"/> 
+                <img src="https://storage.cloud.google.com/all-cats/Tech-Stack/Screen%20Shot%202022-07-01%20at%202.03.54%20PM.png" height="150px" width="150px"/> 
+                <img src="https://storage.cloud.google.com/all-cats/Tech-Stack/Screen%20Shot%202022-07-01%20at%202.11.20%20PM.png" height="150px" width="150px"/> 
                 </div>
+                </Col>
+                <Row>
+                <h4>Cat Rescue!</h4>
+                  </Row>
+                </Container>
               </Offcanvas.Body>
               </Offcanvas>
 

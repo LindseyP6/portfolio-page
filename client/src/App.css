@@ -186,8 +186,9 @@ body {
   margin: 5%;
 }
 
-.bio-more-pics {
-  padding: 2%;
+.offcanvas img{
+  text-align: center;
+  margin: 1%;
 }
 
 #tech {
