@@ -94,7 +94,7 @@ function Bio() {
 
               <Offcanvas show={showMore} onHide={handleCloseMore} placement='bottom'>
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title>More Sh!t About Me</Offcanvas.Title>
+                <Offcanvas.Title>Things I love. . .</Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Container>
