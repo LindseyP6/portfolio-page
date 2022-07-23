@@ -7,15 +7,13 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 
 function TechStack() {
-  const [tech, setTech] = useState();
+  // const [tech, setTech] = useState();
 
-  useEffect(() => {
-    fetch("/tech_stacks")
-      .then((r) => r.json())
-      .then(setTech);
-  }, []);
-
-  console.log(tech);
+  // useEffect(() => {
+  //   fetch("/tech_stacks")
+  //     .then((r) => r.json())
+  //     .then(setTech);
+  // }, []);
 
   return (
     <div id="tech">
@@ -182,6 +180,14 @@ function TechStack() {
           </Row>
         </Container>
       </div>
+        <div className="mobile-tech-stack">
+          <li>React</li>
+          <li>Ruby</li>
+          <li>Rails</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </div>
     </div>
   );
 }

@@ -2,6 +2,7 @@
   /* background-color: black; */
 }
 
+/* @media (min-device-width: 805px) and (max-device-width: 1280px){} */
 body {
   background-color: #000000;
   background-image: url("https://storage.cloud.google.com/all-cats/Tech-Stack/lubo-minar-TrpdzVh2_pE-unsplash.jpg");
@@ -153,7 +154,7 @@ body {
   font-size: 1.5em;
   color: #83c5be;
   /* overflow-wrap: break-word; */
-  max-width: 60%;
+  max-width: 75%;
   padding: 0;
   text-align: center;
   justify-self: center;
@@ -186,10 +187,10 @@ body {
   margin: 5%;
 }
 
-.offcanvas img{
+/* .offcanvas img{
   text-align: center;
   margin: 1%;
-}
+} */
 
 #tech {
   grid-area: 4 / 1 / 5 / 3;
@@ -230,6 +231,10 @@ body {
 .tech-learning {
   border: 2px dotted #907ad6;
   border-radius: 5%;
+}
+
+.mobile-tech-stack {
+  display: none;
 }
 
 /* PROJECTS CSS */
@@ -381,8 +386,32 @@ iframe {
 /* FOR MOBILE: ADJUST FONT SIZE FOR GREETING, ADJUST PROJECTS GRID AND SIZE PROJECT IMAGE, make footer links bigger, make bio with picture on top and words on bottom */
 
 @media (max-width: 600px) {
-  .app, body {
+  #app, body, * {
     /* overflow-x: auto;
     white-space: nowrap;   */
+    background-color: #000000;
+    text-align: center;
+    place-items: center;
+  }
+  #bio {
+    display: block;
+    text-align: center;
+  }
+  .bio-right img {
+    width: 85vw;
+    height: 70vh;
+  }
+  .bio-left {
+    font-size: 1.5em;
+    max-width: 100%;
+  }
+  .tech img, #tech img, #tech, .stack-grid {
+    display: none;
+  }
+  .mobile-tech-stack {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    font-family: 'Monoton', cursive;
   }
 }

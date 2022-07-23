@@ -86,13 +86,13 @@ function Bio() {
                     <em>Staten Island, New York. Graduated: 06/2007</em>
                     <p>National Honor Society. Gay/Straight Alliance</p>
                 </Offcanvas.Body>
-                </Offcanvas>
+            </Offcanvas>
             
             <Button variant="dark" onClick={handleShowMore}>
               More!
             </Button>
 
-              <Offcanvas show={showMore} onHide={handleCloseMore} placement='bottom'>
+              <Offcanvas show={showMore} onHide={handleCloseMore} placement="end">
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title>Things I love. . .</Offcanvas.Title>
               </Offcanvas.Header>
@@ -120,19 +120,8 @@ function Bio() {
               </Offcanvas>
 
           </div>
-
-      {/* <Offcanvas show={show} onHide={handleClose}>
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>My Resume</Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          <a href="https://www.linkedin.com/in/lindsey-lee-pregent1613/overlay/1635490062046/single-media-viewer/" target="_blank" rel="noreferrer">Resume</a>
-          <img src="https://storage.cloud.google.com/all-cats/Screen%20Shot%202022-06-04%20at%2010.50.56%20PM.png" alt="resume-screenshot"/>
-        </Offcanvas.Body>
-      </Offcanvas> */}
-
-
         </div>
+
         <div className="bio-right">
           <img src="../Images/llp.jpeg" alt="selfie of me with glasses and purple hair"/>
         </div>
