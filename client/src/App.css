@@ -1,7 +1,7 @@
 
 /* @media (min-device-width: 805px) and (max-device-width: 1280px){} */
 #root, body, * {
-  background-color: #d5c9fe;
+  background-color: #e9e5f7;
   /* background-image: url("https://storage.cloud.google.com/all-cats/Tech-Stack/lubo-minar-TrpdzVh2_pE-unsplash.jpg"); */
   /* background-repeat: repeat;
   background-size: 100vw; 
@@ -35,31 +35,33 @@
 
 /* HEADER CSS */
 #header {
-  grid-area: 1 / 1 / 2 / 3; 
-  /* position: sticky; */
+  /* grid-area: 1 / 1 / 2 / 3;  */
+  position: sticky;
   top: 0;
-  /* background-color: #020204c3; */
-  z-index: 1;
-  display: grid;
+  right: 5%;
+  z-index: 99999;
+  place-self: end;
+  /* display: grid;
   grid-template-columns: repeat(2);
-  grid-column-gap: 2%;
+  grid-column-gap: 2%; */
   /* grid-template-rows: 1fr; */
 }
 
-.nav-links, .navbar-nav {
-  background: transparent;
-  font-size: 2.5em;
-  /* padding: 1% 0% 1% 10%; */
-  background-color: none;
-  text-align: end;
-  align-self: center;
-  grid-area: 1 / 1 / 2 / 2;
-}
+/* .navbar-toggler-icon {
+  background-color: orange;
+} */
 
 .nav-links a, .navbar-nav a {
   color: #006d77;
-  padding: 2.5%;
+  padding: 0%;
   text-decoration: none;
+  font-family: 'Monoton', cursive;
+  font-size: 2.5em;
+  text-align: end;
+}
+
+.nav-links a:hover {
+  color: orange;
 }
 
 /* .nav-links a:hover, .my-links a:hover {
@@ -70,11 +72,11 @@
 .my-links {
   background-color: none;
   font-size: 1.8em;
-  grid-area: 1 / 2 / 2 / 3;
-  justify-self: center;
-  align-self: center;
-  width: 100%;
-  display: flex;
+  /* grid-area: 1 / 2 / 2 / 3; */
+  /* justify-self: center;
+  align-self: center; */
+  /* width: 100%; */
+  /* display: flex; */
   padding: 0 1rem 0% 0;
   color: #907ad6;
 
@@ -148,7 +150,7 @@
   grid-area: 3 / 1 / 4 / 2;
   display: inline-block;
   font-size: 1.5em;
-  color: #83c5be;
+  color: #006d77;
   /* overflow-wrap: break-word; */
   max-width: 75%;
   padding: 0;
@@ -157,9 +159,9 @@
   align-self: end;
 }
 
-.bio-left p {
+/* .bio-left p {
   background-color: #0b0c0ea6;
-}
+} */
 
 .bio-right {
   grid-area: 3 / 2 / 4 / 3;;
@@ -381,24 +383,43 @@ iframe {
 
 /* FOR MOBILE: ADJUST FONT SIZE FOR GREETING, ADJUST PROJECTS GRID AND SIZE PROJECT IMAGE, make footer links bigger, make bio with picture on top and words on bottom */
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   #app, body, * {
     /* overflow-x: auto;
     white-space: nowrap;   */
-    background-color: #000000;
     text-align: center;
     place-items: center;
+  }
+  #header, .small-header, .my-links {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-self: center;
+  }
+  #greeting {
+    width: 80vw;
+    margin: 0;
+  }
+  #greeting h1 {
+    font-size: 3.3em;
+    padding: 1%;
+  }
+  #greeting h4 {
+    font-size: 1.4em;
+  }
+  #greeting p {
+    font-size: 1em;
   }
   #bio {
     display: block;
     text-align: center;
   }
   .bio-right img {
-    width: 85vw;
-    height: 70vh;
+    width: 65vw;
+    height: 40vh;
   }
   .bio-left {
-    font-size: 1.5em;
+    font-size: 1em;
     max-width: 100%;
   }
   .tech img, #tech img, #tech, .stack-grid {

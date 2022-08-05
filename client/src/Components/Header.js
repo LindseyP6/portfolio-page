@@ -8,12 +8,13 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
+import Offcanvas from "react-bootstrap/Offcanvas";
 
 function Header() {
   return (
-    // <div id="header">
+    // <div className="small-header">
 
-    <Navbar expand="lg" id="header" sticky="top">
+    <Navbar collapseOnSelect expand="xxl" fixed="top" id="nav-header">
       <Container>
         <Navbar.Brand
           href="https://www.linkedin.com/in/lindsey-lee-pregent1613/"
@@ -28,7 +29,6 @@ function Header() {
           target="_blank"
           rel="noreferrer"
           bsPrefix="my-links"
-
         >
           <VscGithub />
         </Navbar.Brand>
@@ -36,24 +36,27 @@ function Header() {
           href="https://medium.com/@lindsey.lee6"
           target="_blank"
           rel="noreferrer"
-                    bsPrefix="my-links"
-
+          bsPrefix="my-links"
         >
           <AiFillMediumCircle />
         </Navbar.Brand>
 
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav className="nav-links" navbarScroll>
-            <Nav.Link href="#bio">Bio</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#footer">Contact</Nav.Link>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="nav-burger">
+            <Nav.Link style={{ color: "#006d77" }} href="#bio">
+              Bio
+            </Nav.Link>
+            <Nav.Link style={{ color: "#006d77" }} href="#projects">
+              Projects
+            </Nav.Link>
+            <Nav.Link style={{ color: "#006d77" }} href="#footer">
+              Contact
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-
-    //  </div>
   );
 }
 
