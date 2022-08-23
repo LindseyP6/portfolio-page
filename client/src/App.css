@@ -1,18 +1,13 @@
 
-/* @media (min-device-width: 805px) and (max-device-width: 1280px){} */
+/* @media (min-device-width: 805px) and (max-device-width: 1880px){ */
 #root, body, * {
   background-color: #e9e5f7;
-  /* background-image: url("https://storage.cloud.google.com/all-cats/Tech-Stack/lubo-minar-TrpdzVh2_pE-unsplash.jpg"); */
-  /* background-repeat: repeat;
-  background-size: 100vw; 
-  height: 100vw;
-  width: 100vw;
-  color: rgb(233, 231, 231); */
 }
 
 #app {
   display: grid;
-  grid-template-columns: 1fr fit-content(30%);
+  grid-template-columns: 1fr ;
+  /* fit-content(30%); */
   grid-template-rows: repeat;
   grid-column-gap: 2%;
   grid-row-gap: 8%;
@@ -35,21 +30,12 @@
 
 /* HEADER CSS */
 #header {
-  /* grid-area: 1 / 1 / 2 / 3;  */
   position: sticky;
   top: 0;
   right: 5%;
   z-index: 99999;
-  place-self: end;
-  /* display: grid;
-  grid-template-columns: repeat(2);
-  grid-column-gap: 2%; */
-  /* grid-template-rows: 1fr; */
+  /* place-self: end; */
 }
-
-/* .navbar-toggler-icon {
-  background-color: orange;
-} */
 
 .nav-links a, .navbar-nav a {
   color: #006d77;
@@ -60,7 +46,7 @@
   text-align: end;
 }
 
-.nav-links a:hover {
+.nav-links a:hover, .navbar-nav a:hover {
   color: orange;
 }
 
@@ -88,101 +74,119 @@
 }
 
 /* GREETING CSS */
+
+#home-page {
+  grid-area: 1 / 1 / 2 / 2; 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
 #greeting {
-  grid-area: 2 / 1 / 3 / 3;
+  grid-area: 1 / 1 / 2 / 2; 
   font-family: 'Monoton', cursive;
-  justify-self: center;
-  text-align: center;
-  margin: 0;
+  margin-top: 15%;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: 1.5fr 1.2fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 1%;
+  grid-row-gap: 0px;
 }
 
-#greeting h1 {
-  font-size: 5.3em;
+.home-page-greeting {
+  grid-area: 1 / 1 / 4 / 2;
+  text-align: end;
+}
+
+.home-page-greeting h4 {
+  font-size: 3.2em;
+  color: #907ad6;
+  justify-self: end;
+}
+
+.home-page-greeting h1 {
+  font-size: 5em;
   color: #006d77; 
-  margin: 0;
+  justify-self: end;
 }
 
-#greeting h4 {
-  font-size: 3.7em;
-  color: #907ad6;
-  /* color: rgb(248, 248, 227); */
-  margin: 0;
-}
-
-#greeting p {
+.home-page-greeting p {
   font-family: 'Rubik', sans-serif;
-  /* color: #d6c9f5; */
   color: #907ad6;
-  font-size: 1.5em;
+  font-size: 1.3em;
   display: inline-block;
-  padding-right: 4%;
-  margin-top: 1%;
-  width: 60%;
+  place-self: end;
 }
 
+.home-page-selfie {
+  grid-area: 1 / 2 / 4 / 3; 
+  justify-self: center;
+  align-self: center;
+}
+
+#home-page img {
+  max-width: 88%;
+  max-height: 86%;
+  border-radius: 12%;
+  opacity: .80;
+  border-radius: 27%;
+
+}
 
 /* BIO CSS */
 #bio {
-  grid-area: 3 / 1 / 4 / 2;
-  display: inline-grid;
-  grid-template-columns: 1fr;
-  margin-right: 6%;
+  grid-area: 2 / 1 / 3 / 2;
+  /* margin-top: -15%; */
+  /* display: inline-grid; */
   /* margin: 2%; */
   /* padding-top: 2%; */
   /* align-content: center; */
+  justify-self: center;
 }
 
-.bio-padding {
+/* .bio-padding {
   grid-area: 1 / 1 / 2 / 3;
   height: 20vh;
-}
+} */
 
-#bio h1 {
-  grid-area: 2 / 2 / 3 / 3;
-  text-align: center;
-  align-self: stretch;
-  font-size: 3.3em;
-  color: #dac4f9;
-  padding: 1% 9% 0% 0;
-}
 
-.bio-left {
-  grid-area: 3 / 1 / 4 / 2;
+.bio-picture {
+  /* grid-area: 3 / 1 / 4 / 2; */
   display: inline-block;
   font-size: 1.5em;
   color: #006d77;
   /* overflow-wrap: break-word; */
   max-width: 75%;
-  padding: 0;
-  text-align: center;
+  /* padding: 0; */
+  /* text-align: center;
   justify-self: center;
-  align-self: end;
+  align-self: end; */
 }
+
+
 
 /* .bio-left p {
   background-color: #0b0c0ea6;
 } */
 
 .bio-right {
-  grid-area: 3 / 2 / 4 / 3;;
+  /* grid-area: 3 / 2 / 4 / 3;; */
   /* text-align: center; */
   align-self: start;
-  margin-right: 1%
+  margin-right: 1%;
 }
 
-.bio-right img {
-  /* max-width: 88%;
-  max-height: 88%; */
-  border-radius: 12%;
-  opacity: .80;
-}
 
-.bio-buttons button {
+#bio button {
   font-family: 'Monoton', cursive;
   color: #caac05;
-  font-size: 25px;
-  padding: 1%;
+  font-size: 1.1em;
+  padding: 5%;
   margin: 5%;
+  width: 100%;
 }
 
 /* .offcanvas img{
@@ -191,9 +195,9 @@
 } */
 
 #tech {
-  grid-area: 4 / 1 / 5 / 3;
-  margin-top: 8%;
-  align-items: center;
+  grid-area: 3 / 1 / 4 / 2;
+  /* margin-top: 8%;
+  align-items: center; */
 }
 
 /* #tech h4 {
@@ -237,7 +241,7 @@
 
 /* PROJECTS CSS */
 #projects {
-  grid-area: 5 / 1 / 6 / 3;  
+  grid-area: 2 / 1 / 3 / 2;  
   text-align: center;
   margin: 10% 5% 0px 5%;
 }
@@ -265,7 +269,7 @@
   grid-row-gap: 1%;
   border: 1px dashed #dac4f9ad;
   padding: 2%;
-  color: white;
+  color: black;
 }
 
 .project-details {
@@ -311,7 +315,7 @@ iframe {
 
 /* FOOTER CSS */
 #footer {
-  grid-area: 6 / 1 / 7 / 3;
+  grid-area: 3 / 1 / 4 / 2;
   /* grid-area: 6 / 1 / 7 / 3; */
   color: #907ad6;
   display: inline-block;
@@ -375,6 +379,8 @@ iframe {
   color: #907ad6;
 }
 
+/* } */
+
 /* .to-top-icon {
   font-size: 55em;
   border: none;
@@ -383,12 +389,13 @@ iframe {
 
 /* FOR MOBILE: ADJUST FONT SIZE FOR GREETING, ADJUST PROJECTS GRID AND SIZE PROJECT IMAGE, make footer links bigger, make bio with picture on top and words on bottom */
 
-@media (max-width: 750px) {
+@media (min-device-width: 105px) and (max-device-width: 750px) {
   #app, body, * {
     /* overflow-x: auto;
     white-space: nowrap;   */
     text-align: center;
     place-items: center;
+    background-color: #e9e5f7;
   }
   #header, .small-header, .my-links {
     display: inline-flex;

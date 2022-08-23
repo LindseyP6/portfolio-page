@@ -45,7 +45,7 @@ function Header() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="nav-burger">
             <Nav.Link style={{ color: "#006d77" }} href="#bio">
-              Bio
+              Home
             </Nav.Link>
             <Nav.Link style={{ color: "#006d77" }} href="#projects">
               Projects

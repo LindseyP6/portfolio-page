@@ -1,12 +1,10 @@
 import React from 'react';
 import '../App.css';
 import Header from './Header';
-import Greeting from './Greeting';
-import Bio from './Bio';
-import TechStack from './TechStack';
+import HomePage from './HomePage';
 import Projects from './Projects';
-import Cats from './Cats';
 import Footer from './Footer';
+
 import ScrollToTop from "react-scroll-to-top";  
 import { BiArrowToTop } from 'react-icons/bi'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,10 +17,9 @@ function App() {
       // component={<BiArrowToTop />} 
       />
       <Header />
-      <Greeting />  
-      <Bio /> 
+
+      <HomePage />
       <Projects />
-        {/* <Cats /> */}
       <Footer />
     </div>
   );
