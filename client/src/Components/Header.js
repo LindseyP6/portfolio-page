@@ -14,7 +14,7 @@ function Header() {
   return (
     // <div className="small-header">
 
-    <Navbar collapseOnSelect expand="xxl" fixed="top" id="nav-header">
+    <Navbar collapseOnSelect expand="xxxl" fixed="top" id="nav-header">
       <Container>
         <Navbar.Brand
           href="https://www.linkedin.com/in/lindsey-lee-pregent1613/"
@@ -44,13 +44,13 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="nav-burger">
-            <Nav.Link style={{ color: "#006d77" }} href="#bio">
+            <Nav.Link href="#bio">
               Home
             </Nav.Link>
-            <Nav.Link style={{ color: "#006d77" }} href="#projects">
+            <Nav.Link href="#projects">
               Projects
             </Nav.Link>
-            <Nav.Link style={{ color: "#006d77" }} href="#footer">
+            <Nav.Link href="#footer">
               Contact
             </Nav.Link>
           </Nav>

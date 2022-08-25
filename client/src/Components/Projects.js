@@ -28,7 +28,7 @@ function Projects() {
                   <p>{project.description}</p>
                   <a href={project.github_link} target="_blank" rel="noreferrer"><VscGithub /></a> 
                   <p><strong>Tech Stack Used: </strong> {project.technologies}</p>
-                </div>
+                </div> 
                 <div className="project-image">
                   <iframe onClick={handleToggleClick} src={project.demo_link} title="{project.name} demo video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen/>
                 </div>
