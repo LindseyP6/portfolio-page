@@ -97,13 +97,13 @@ a.nav-links:hover {
 }
 
 .home-page-greeting h4 {
-  font-size: 3.2em;
+  font-size: 3.0em;
   color: #907ad6;
   justify-self: end;
 }
 
 .home-page-greeting h1 {
-  font-size: 5em;
+  font-size: 4em;
   color: #006d77; 
   justify-self: end;
 }
@@ -355,7 +355,7 @@ iframe {
   }
   #greeting {
     width: 80vw;
-    margin: 0;
+    margin-top: 10%;
   }
   #greeting h1 {
     font-size: 3.3em;
@@ -383,7 +383,7 @@ iframe {
     display: none;
   }
   .mobile-tech-stack {
-    font-size: 3em;
+    font-size: 5em;
     color: white;
     text-align: center;
     font-family: 'Monoton', cursive;
