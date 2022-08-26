@@ -81,7 +81,6 @@ a.nav-links:hover {
 
 #greeting {
   grid-area: 1 / 1 / 2 / 2; 
-  font-family: 'Monoton', cursive;
   margin-top: 15%;
   margin-left: 5%;
   display: grid;
@@ -97,19 +96,23 @@ a.nav-links:hover {
 }
 
 .home-page-greeting h4 {
+  font-family: 'Monoton', cursive;
   font-size: 3.0em;
   color: #907ad6;
   justify-self: end;
+  
 }
 
 .home-page-greeting h1 {
+  font-family: 'Monoton', cursive;
   font-size: 4em;
   color: #006d77; 
   justify-self: end;
 }
 
+
 .home-page-greeting p {
-  font-family: 'Rubik', sans-serif;
+  /* font-family: 'Rubik', sans-serif; */
   color: #907ad6;
   font-size: 1.3em;
   display: inline-block;
@@ -131,6 +134,9 @@ a.nav-links:hover {
 
 }
 
+#home-page img:hover {
+  filter: grayscale(70%);
+}
 /* BIO CSS */
 #bio {
   grid-area: 2 / 1 / 3 / 2;
@@ -174,15 +180,14 @@ a.nav-links:hover {
 
 .tech img, #tech img {
   width: 4vw;
-  height: 7vh;
+  height: 5.5vh;
   border-radius: 12%;
   opacity: .6;
 }
 
 .tech-learning {
-  border: solid #006d77;
+  border: solid #01a1b0;
   border-width: 0 0 0 3px;
-
 }
 
 .mobile-tech-stack {

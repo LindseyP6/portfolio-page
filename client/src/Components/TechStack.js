@@ -175,6 +175,18 @@ function TechStack() {
                   style={{ backgroundColor: "#3776AB" }}
                 />
               </OverlayTrigger>
+              </Col>
+              <Col>
+              <OverlayTrigger
+                placement="top"
+                overlay={<Popover>Currently Studying: UX/UI Design</Popover>}
+              >
+                <img
+                  src="https://storage.cloud.google.com/all-cats/Tech/ux-ui2.jpeg"
+                  alt="ux-ui-icon"
+                  style={{ backgroundColor: "#01a1b0" }}
+                />
+              </OverlayTrigger>
             </Col>
 
           </Row>
